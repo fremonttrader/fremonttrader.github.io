@@ -13,3 +13,5 @@ Keep disclosures synchronized with app behavior. Current policy contact is this 
 ## App branding
 
 The website uses the actual Bandwidth Meter Roku artwork, copied byte-for-byte: `assets/bandwidth-meter-globe.png` from the app’s `images/splash_globe.png` for the shared header and favicon, and `assets/bandwidth-meter-app-icon.png` from `images/icon_focus_fhd.png` for the homepage. Preserve their aspect ratios and original artwork; do not replace them with a generated logo or generic initials.
+
+Keep the header globe at 40px wide and the homepage icon at 120px (96px on small screens). HTML width/height attributes must use compact display sizes so missing or cached CSS cannot expose the full-resolution image size. Update the stylesheet version query when changing branding styles.
