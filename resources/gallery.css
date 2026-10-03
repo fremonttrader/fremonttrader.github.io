@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("fonts/SpaceGrotesk-Variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  color: #f4f7fb;
+  background: #081222;
+  font-synthesis: none;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.archive {
+  width: min(1180px, 100%);
+  margin-inline: auto;
+  padding: clamp(24px, 5vw, 64px) 24px 40px;
+}
+
+.archive-header {
+  max-width: 780px;
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #19cbc1;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.intro {
+  margin: 20px 0 12px;
+  font-size: 1.05rem;
+}
+
+.font-note,
+.font-direction,
+.archive-footer {
+  color: #a3b0c3;
+  font-size: 0.9rem;
+}
+
+.font-note {
+  margin: 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.preview {
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid #26364c;
+  border-radius: 12px;
+  background: #0d192a;
+}
+
+.preview-link {
+  display: block;
+  background: #081222;
+}
+
+.preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+}
+
+figcaption {
+  padding: 16px 20px 18px;
+}
+
+h2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.number {
+  color: #19cbc1;
+  font-variant-numeric: tabular-nums;
+}
+
+.font-direction {
+  margin: 6px 0 0;
+}
+
+.preview-selected {
+  border-color: #19cbc1;
+}
+
+.selected-label {
+  padding: 2px 8px;
+  border-radius: 20px;
+  color: #081222;
+  background: #19cbc1;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.archive-footer {
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid #26364c;
+}
+
+.archive-footer p {
+  margin: 0 0 12px;
+}
+
+.asset-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
+
+a {
+  color: #9ce8e2;
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  color: #fff;
+}
+
+a:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: -3px;
+}
+
+.asset-links a:focus-visible {
+  outline-offset: 4px;
+}
+
+@media (max-width: 640px) {
+  .archive {
+    padding-inline: 16px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  figcaption {
+    padding-inline: 16px;
+  }
+}

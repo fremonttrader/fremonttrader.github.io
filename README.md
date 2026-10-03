@@ -1,12 +1,16 @@
-# Fremont Trader public app pages
+# FremontTrader website and public app pages
 
-Public documentation for Bandwidth Meter. This repository contains only the website, privacy policy, and terms of use. App source, internal knowledge, distribution archives, credentials, and signing files belong elsewhere.
+The FremontTrader company homepage, public logo resources, and documentation for Bandwidth Meter. This repository contains only public website content, artwork, privacy policy, and terms of use. App source, internal knowledge, distribution archives, credentials, and signing files belong elsewhere.
 
+- Company: https://fremonttrader.com/ and https://fremonttrader.github.io/
+- Logo resources: https://fremonttrader.com/resources/ and https://fremonttrader.github.io/resources/
 - App: https://fremonttrader.github.io/bandwidth-meter/
 - Privacy: https://fremonttrader.github.io/bandwidth-meter/privacy/
 - Terms: https://fremonttrader.github.io/bandwidth-meter/terms/
 
-GitHub Pages publishes the root of `main`. Static HTML and CSS; no build, third-party scripts, external fonts, or analytics are required. Pages include print styling. Preview with `python3 -m http.server --bind 127.0.0.1 8766`.
+GitHub Pages publishes the root of `main`. Static HTML and CSS; no build, third-party scripts, external font requests, or analytics are required. The company homepage uses the approved icon-left FT monogram and a self-hosted Space Grotesk font under the included SIL Open Font License. The existing app pages retain their own artwork and print styling. Preview with `python3 -m http.server --bind 127.0.0.1 8766`.
+
+Cloudflare's `fremonttrader-github-proxy` Worker serves the GitHub Pages content through `fremonttrader.com`. Keep GitHub Pages' custom domain unset and do not add a root `CNAME` file: both hostnames must continue serving the site directly, including the existing `/bandwidth-meter/privacy/` and `/bandwidth-meter/terms/` paths.
 
 Keep disclosures synchronized with app behavior. Current policy contact is this repository’s public Issues tracker; do not substitute a private or work email without the publisher’s instruction. Support requests are public. Preserve the distinction between device-local history and third-party request logs, and between app behavior and GitHub/Roku platform practices. Terms preserve applicable MIT and third-party license rights.
 

@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/resources/fonts/SpaceGrotesk-Variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark;
+  background: #0b1220;
+  color: #f8fafc;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45em;
+  font-size: clamp(1.65rem, 6.15vw, 5.25rem);
+}
+
+.brand-mark {
+  display: block;
+  flex: none;
+  width: auto;
+  height: 1.22em;
+}
+
+h1 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.045em;
+  white-space: nowrap;
+}
+
+@media (max-width: 320px) {
+  main {
+    padding: 16px;
+  }
+
+  .brand {
+    font-size: 1.45rem;
+    gap: 0.35em;
+  }
+}
