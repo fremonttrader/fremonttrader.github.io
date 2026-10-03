@@ -44,6 +44,23 @@ main {
   flex: none;
   width: auto;
   height: 1.22em;
+  transform-origin: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .brand-mark {
+    animation: brand-coin-turn 3.6s cubic-bezier(0.45, 0, 0.55, 1) 0.4s 1;
+  }
+}
+
+@keyframes brand-coin-turn {
+  from {
+    transform: perspective(600px) rotateY(0turn);
+  }
+
+  to {
+    transform: perspective(600px) rotateY(1turn);
+  }
 }
 
 h1 {
