@@ -1,6 +1,6 @@
 # FremontTrader website and public app pages
 
-The FremontTrader company homepage, public logo resources, and documentation for Bandwidth Meter and TV Checkup. This repository contains only public website content, artwork, privacy policy, and terms of use. App source, internal knowledge, distribution archives, credentials, and signing files belong elsewhere.
+The FremontTrader company homepage, public logo resources, and documentation for Bandwidth Meter and TV Checkup. This repository contains public website content, artwork, privacy policy, terms of use, and the original TV Checkup sound samples intended for public playback. App source, internal knowledge, distribution archives, credentials, and signing files belong elsewhere.
 
 - Company: https://fremonttrader.com/ and https://fremonttrader.github.io/
 - Logo resources: https://fremonttrader.com/resources/ and https://fremonttrader.github.io/resources/
@@ -27,4 +27,4 @@ Keep the header globe at 40px wide and the homepage icon at 120px (96px on small
 
 Added October 19, 2026 for app version 1.0.15. The three pages reuse the Bandwidth Meter HTML structure, class names, navigation, responsive layout, and unchanged `assets/styles.css?v=20260928-compact-logo`. `assets/tv-checkup-app-icon.png` is a byte-for-byte copy of TV Checkup’s original 540×405 `images/icon_focus_fhd.png`; display dimensions preserve its aspect ratio.
 
-The privacy policy covers local device readings, ten on-device observation choices, no app-owned network requests, optional email support, GitHub Pages, and Cloudflare when visitors use the custom domain. Keep deletion instructions aligned with My checkup → Options (*) → Clear all. App features and limits are based on the current runtime; these pages do not certify Store approval or hardware accuracy.
+The privacy policy covers local device readings, ten on-device observation choices, optional email support, GitHub Pages, and Cloudflare when visitors use the custom domain. The prepared 1.0.16 page updates disclose selected Sound Checks samples played over HTTPS directly from GitHub Pages. They distinguish this upcoming behavior from fully bundled 1.0.15. Keep version language synchronized with the actual release. There is no app-managed sound cache or promised offline playback for the hosted library. Keep deletion instructions aligned with My checkup → Options (*) → Clear all. App features and limits are based on the current runtime; these pages do not certify Store approval or hardware accuracy.
